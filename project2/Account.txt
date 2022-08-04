@@ -1,0 +1,11 @@
+newAccount
+6969447
+eee
+CHECKING
+temp
+10000.0
+false
+0.0
+0.0
+0.0
+0

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87ffe7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AccountPage">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="581.0" layoutX="10.0" layoutY="14.0" opacity="0.62" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+            <image>
+                <Image url="@image/DollarTreeGrowing_20140627171800.jpg" />
+            </image></ImageView>
+        <TabPane layoutX="56.0" layoutY="93.0" prefHeight="261.0" prefWidth="516.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="create account">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="passAccount" layoutX="340.0" layoutY="80.0" />
+                                <CheckBox fx:id="MoneymarketAccount" layoutX="55.0" layoutY="127.0" mnemonicParsing="false" onAction="#pressMoneymarketAccount" text="Moneymarket Account" />
+                                <CheckBox fx:id="saving" layoutX="55.0" layoutY="73.0" mnemonicParsing="false" onAction="#pressCheckSaving" text="Saving Account" />
+                                <CheckBox fx:id="checking" layoutX="55.0" layoutY="99.0" mnemonicParsing="false" onAction="#pressChecking" text="Checking Account" />
+                                <CheckBox fx:id="RetirementAccount" layoutX="55.0" layoutY="156.0" mnemonicParsing="false" onAction="#pressRetirementAccount" text="Retirement Account" />
+                                <CheckBox fx:id="Certificates" layoutX="55.0" layoutY="186.0" mnemonicParsing="false" onAction="#pressCertificates" text="Certificates of deposit" />
+                                <Label layoutX="55.0" layoutY="35.0" text="choose your account type:" textFill="#101111" />
+                                <Label layoutX="275.0" layoutY="84.0" text="Password" />
+                                <Button fx:id="btnCreat" layoutX="444.0" layoutY="144.0" mnemonicParsing="false" onAction="#pressBtnCreat" text="creat" />
+                        <Button fx:id="btnChoosInCreat" layoutX="441.0" layoutY="115.0" mnemonicParsing="false" onAction="#pressBtnChoosInCreat" text="choos" />
+                        <Button fx:id="btnDeletAcc" layoutX="434.0" layoutY="174.0" mnemonicParsing="false" onAction="#pressBtnDeletAcc" prefHeight="25.0" prefWidth="56.0" text="delete" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="View accounts">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ListView fx:id="LVviewAcc" layoutX="94.0" layoutY="28.0" prefHeight="188.0" prefWidth="200.0" />
+                        <Button fx:id="btnView" layoutX="20.0" layoutY="16.0" mnemonicParsing="false" onAction="#pressBtnView" text="View" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabDefineCommonlyAcc" text="Define a commonly used account">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="newCommonlyNumber" layoutX="46.0" layoutY="34.0" promptText="Account Number" />
+                                <TextField fx:id="newCommonlyAlias" layoutX="46.0" layoutY="81.0" promptText="Alias" />
+                                <Button fx:id="btnAddCommonly" layoutX="46.0" layoutY="128.0" mnemonicParsing="false" onAction="#pressBtnAddCommonly" text="add" />
+                                <ListView fx:id="LVCommonlyAccount" layoutX="277.0" layoutY="16.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Button fx:id="btnViewCommonlyAcc" layoutX="216.0" layoutY="191.0" mnemonicParsing="false" onAction="#pressBtnViewCommonlyAcc" text="view" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            <Tab text="choos  account">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txtPassAccNow" layoutX="340.0" layoutY="80.0" />
+                              <CheckBox fx:id="MoneymarketAccountACCN" layoutX="55.0" layoutY="127.0" mnemonicParsing="false" onAction="#pressMoneymarketAccountACCN" text="Moneymarket Account" />
+                              <CheckBox fx:id="savingACCN" layoutX="55.0" layoutY="73.0" mnemonicParsing="false" onAction="#pressCheckSavingACCN" text="Saving Account" />
+                              <CheckBox fx:id="checkingACCN" layoutX="55.0" layoutY="99.0" mnemonicParsing="false" onAction="#pressCheckingACCN" text="Checking Account" />
+                              <CheckBox fx:id="RetirementAccountACCN" layoutX="55.0" layoutY="156.0" mnemonicParsing="false" onAction="#pressRetirementAccountACCN" text="Retirement Account" />
+                              <CheckBox fx:id="CertificatesACCN" layoutX="55.0" layoutY="186.0" mnemonicParsing="false" onAction="#pressCertificatesACCN" text="Certificates of deposit" />
+                              <Label layoutX="55.0" layoutY="35.0" text="choose your account type:" textFill="#101111" />
+                              <Label layoutX="275.0" layoutY="84.0" text="Password" />
+                              <Button fx:id="btnChoosAcc" layoutX="415.0" layoutY="161.0" mnemonicParsing="false" onAction="#pressBtnCoosAcc" text="choose" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
